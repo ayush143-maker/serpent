@@ -1,6 +1,6 @@
 # serpent
 
-**SERPENT** is a browser-based take on the classic Snake game. The project has a single HTML page, `index.html`, with a play area, current and best scores, pause and play controls, and on-screen guidance for keyboard and touch-style movement. Follow that guidance to control the snake.
+**SERPENT** is a browser-based take on the classic Snake game. The project consists of the single HTML page `index.html`, which contains a play area, current and best scores, pause and play controls, and on-screen guidance for keyboard and touch-style movement. Follow that guidance to control the snake.
 
 ## Play locally
 
