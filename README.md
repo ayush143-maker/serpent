@@ -38,3 +38,9 @@ Keep changes scoped to the relevant page content or behavior. Preserve `index.ht
 - [ ] Try keyboard and touch-style movement as described on the page; try pause and play and observe the score displays.
 - [ ] Check relevant viewport sizes, keyboard operation, visible focus, control names, and contrast.
 - [ ] Inspect local references and the jsDelivr font requests if the change affects paths or typography; check fallback fonts if the external fonts are unavailable.
+
+## Final release review
+
+- Open `index.html` from the published location and confirm the page loads as expected.
+- Test with network access available and keep a sensible fallback for externally loaded resources.
+- Review the published result once on a narrow screen and once on a wider screen; treat this as a release check, not an automated test report.
