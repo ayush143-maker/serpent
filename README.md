@@ -11,3 +11,10 @@ python -m http.server 8000
 ```
 
 Then visit <http://localhost:8000>. To review a change, edit `index.html`, reload the page, and use its on-screen guidance and controls.
+
+## Personalize the page
+
+- Edit the visible title, instructions, and other page copy in `index.html`. Keep the score displays and controls consistent with the guidance shown to players.
+- Inspect `index.html` for the existing style rules before changing colors, typography, or layout; no separate stylesheet is listed in the project files.
+- The page links to externally hosted Inter and Space Grotesk font stylesheets. Preserve those links if you want to retain the current font choices.
+- Before moving or renaming anything, check `index.html` for local `href` and `src` references and keep their relative paths valid. No separate local asset files are listed.
