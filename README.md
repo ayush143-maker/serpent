@@ -12,15 +12,25 @@ python -m http.server 8000
 
 Then visit <http://localhost:8000>.
 
-## Files and data handling
+## Files and external resources
 
-The supplied project-file list includes `index.html` and `README.md`, with no separate local assets listed. Inspect `index.html` for its actual references before moving or adding files, and preserve or update their relative paths. The page links to Inter and Space Grotesk stylesheets hosted on jsDelivr; these external font requests depend on network access.
+The supplied project-file list includes `index.html` and `README.md`; no separate local assets or build scripts are listed. The page links to Inter and Space Grotesk stylesheets hosted on jsDelivr, so those font requests depend on network access.
 
-The page displays current and best scores, but the supplied information does not establish whether scores persist in browser storage. Check `index.html` before describing or changing storage behavior. Page markup and scripts are delivered to the browser; do not put passwords, API keys, tokens, or other secrets there.
+Before moving or renaming files, inspect `index.html` for local references and preserve or update their relative paths. The supplied information does not establish whether scores persist in browser storage; check the page implementation before describing or changing storage behavior.
+
+## Deployment-readiness checklist
+
+The supplied files establish that `index.html` is the entry page. They do not establish a deployment provider, deployment configuration, or a completed deployment. Treat the following as recommendations to check for the deployment method you choose:
+
+- [ ] Set the published output or root directory to the project directory containing `index.html`, so the entry page is at the published root. No build scripts or separate output directory are listed in the supplied project files.
+- [ ] Inspect `index.html` for local asset references. Keep referenced files at the expected relative locations, or update the paths if files are moved. The supplied project-file list does not include separate local assets.
+- [ ] Account for the external jsDelivr font stylesheets. Confirm the published page remains legible if those requests are unavailable.
+- [ ] Keep passwords, API keys, tokens, and other secrets out of browser-delivered markup and scripts. The supplied project-file list does not establish any configuration or secret-management mechanism.
+- [ ] After publishing, open the resulting page in a browser and preview the actual published version. Check that it loads and inspect the play area, score displays, controls, movement guidance, and layout at relevant viewport sizes.
 
 ## Contributor handoff
 
-Keep changes scoped to the relevant page content or behavior. Preserve `index.html` and its relative references unless the change intentionally updates those references and the files they point to. In your handoff, describe what changed and which game controls, displays, or page elements were affected. Before publishing, manually review the diff and open the page to inspect the result. The checklist below is for manual review, not a report of verified results.
+Keep changes scoped to the relevant page content or behavior. Preserve `index.html` and its relative references unless the change intentionally updates those references and the files they point to. In your handoff, describe what changed and which game controls, displays, or page elements were affected. The checklist below is for manual review, not a report of verified results.
 
 ### Review checklist
 
