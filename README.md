@@ -4,12 +4,10 @@
 
 ## Play locally
 
-No package installation is required. Open `index.html` in a modern browser, or run a local server:
+No package installation is needed. Open `index.html` in a modern browser, or run a local server from the project folder:
 
-    python -m http.server 8000
+```sh
+python -m http.server 8000
+```
 
-Visit http://localhost:8000.
-
-## Controls and changes
-
-Use the on-screen instructions to see the movement controls. When changing the game, keep score displays in sync with game state and check both keyboard and touch input.
+Then visit http://localhost:8000. Use the on-screen instructions for movement controls.
