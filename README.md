@@ -12,6 +12,12 @@ python -m http.server 8000
 
 Then visit <http://localhost:8000>.
 
+## Configuration and data handling
+
+The supplied project-file list contains `index.html` and `README.md`; it does not include a documented environment template, separate configuration file, or backend setup. The page is delivered to the browser, so anything placed in its markup or scripts is public—not a place for passwords, API keys, tokens, or other secrets.
+
+The page displays current and best scores, but this README does not establish whether scores are kept only during play or persisted in browser storage. Check `index.html` before describing or changing data storage, and avoid adding personal or sensitive information to game data. The page also requests Inter and Space Grotesk font stylesheets from jsDelivr; those external requests are a dependency to consider when reviewing privacy and offline behavior.
+
 ## Browser and platform reliability checklist
 
 These are review steps, not verified results. No browser or device compatibility testing is reported here. Record findings separately, including the browser and version, device or viewport, and any issues found.
