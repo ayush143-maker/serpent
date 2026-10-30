@@ -1,19 +1,15 @@
 # serpent
 
-A modern web take on the classic Snake game, with score/best-score display, pause/play controls, and keyboard or swipe-style movement guidance.
+**SERPENT** is a modern browser-based take on the classic Snake game. The page brings together the play area, current score, best score, and pause/play controls, with guidance for keyboard and touch-style movement.
 
-## Run locally
+## Play locally
 
-Open index.html in a modern browser. If browser restrictions block local assets or APIs, serve the folder over HTTP.
+No package installation is required. Open index.html in a modern browser, or run a local server:
 
-## Structure and assets
+    python -m http.server 8000
 
-`index.html` is the primary entry point. Keep linked images, audio, scripts, and styles in their existing relative locations; renaming files may break references.
+Then visit http://localhost:8000.
 
-## Preview and deployment
+## Controls and changes
 
-Open the page in a modern browser. If local-file behavior is restricted, start a simple HTTP server from this folder and open the local address in your browser. For static hosting, publish the correct root folder and check asset paths after deployment.
-
-## Making changes
-
-Test the page after edits and check both phone-sized and desktop-sized viewports. Confirm that buttons and other visible interactions work in the deployed version as well as locally.
+Use the on-screen instructions to see the available movement controls. When adjusting game speed, collision behaviour, or scoring, test both keyboard input and touch interaction. Keep the score and best-score display in sync with the game state, and make sure the pause control really stops the game loop.
